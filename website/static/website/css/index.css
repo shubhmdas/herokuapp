@@ -1,0 +1,588 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-padding-top: 3rem;
+}
+
+body {
+    font-size: 1.4vw;
+}
+
+
+/* Custom scroll bar */
+
+ ::-webkit-scrollbar {
+    width: 8px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: cornsilk;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #086972d2;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #086972;
+}
+
+
+/* Global Styling */
+
+.common-sec {
+    padding: 0 2rem;
+}
+
+.container-common {
+    padding: 2rem 0rem;
+    padding: 0;
+}
+
+a {
+    color: #fff !important;
+    transition: 0.3s all;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover {
+    border-bottom-color: white;
+}
+
+
+/* Home Section Styling */
+
+.home {
+    background: url("../images/header-bg-1.jpg") no-repeat center;
+    color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 8rem;
+    /* remove height and set margin-bottom for intro-header in media queries <770px  */
+}
+
+
+/* Navbar Styling */
+
+.navbar {
+    padding: 0.3rem 2rem;
+    z-index: 999;
+    transition: 0.4s all;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+}
+
+.sticky {
+    background-color: #086972;
+}
+
+.navbar-brand {
+    width: 10rem;
+    transition: 0.4s all;
+}
+
+.brand-scroll {
+    display: none;
+    transition: 0.4s all;
+}
+
+.fas.fa-bars {
+    color: white;
+}
+
+.container-list {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.navbar ul {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-align: right;
+    font-size: 1.2rem;
+    width: max-content;
+}
+
+.navbar ul .nav-item {
+    padding: 0 0.5rem;
+}
+
+.intro-header {
+    padding: 2rem 2rem;
+}
+
+.intro-header .row .tagline {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    /* Apply media query for margin-top */
+}
+
+.intro-header .row .tagline hr {
+    width: 95%;
+    height: 5px;
+    opacity: 90%;
+    background-color: yellow;
+}
+
+.title {
+    margin-top: 1rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 100;
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+.light {
+    color: yellow;
+    font-weight: 800;
+}
+
+.button-container1 {
+    margin: 1.5rem 0;
+}
+
+.button-container1 button {
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    border: 2px solid #086972;
+    background-color: #086972;
+    transition: 0.3s all;
+}
+
+.button-container1 button span {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    color: white;
+    display: inline-block;
+}
+
+.button-container1 button i {
+    color: white;
+    display: inline-block;
+    font-size: 1.3rem;
+    transform: rotate(-90deg);
+}
+
+.button-container1 button:hover {
+    background: transparent;
+}
+
+.intro-header .row .col-lg-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-header .row .col-lg-4 img {
+    width: 100%;
+}
+
+.typing-head-1,
+.typing-head-2,
+.typing-head-3,
+.typing-head-4 {
+    font-size: 2rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+
+/* horizontal rule styling */
+
+.dividing {
+    height: 4px;
+    color: #086972;
+    opacity: 100%;
+}
+
+
+/* About section styling */
+
+#about {
+    background: cornsilk;
+    background-attachment: fixed;
+    padding: 1.5rem;
+}
+
+#about .container-common {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .row {
+    width: 100%;
+    padding: 0;
+}
+
+.letter-big {
+    /* border: 2px solid black; */
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 7rem;
+    font-weight: 600;
+    color: black;
+    opacity: 30%;
+}
+
+.letter-big-after {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    position: relative;
+    bottom: 3rem;
+    right: 0.5rem;
+    color: black;
+    opacity: 30%;
+}
+
+.head-about {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    position: relative;
+    bottom: 6.5rem;
+    color: #fff;
+    background-color: #086972;
+    border-radius: 10px;
+    width: max-content;
+    margin-left: 1.8rem;
+    padding: 0 1rem;
+}
+
+.txt-about {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 5rem;
+    text-align: justify;
+}
+
+.about-img-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-img-col img {
+    height: 80%;
+    width: 75%;
+    border-radius: 3%;
+    position: relative;
+    bottom: 1.4rem;
+}
+
+
+/* Team section styling */
+
+#team {
+    background: #121e37;
+    background-attachment: fixed;
+    padding-bottom: 3rem;
+}
+
+#team .container-common {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#team h1.font-weight-light {
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.fac {
+    position: relative;
+}
+
+#team .profile-link-sir {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    opacity: 0%;
+    transition: 0.5s all;
+    border-bottom: 2px solid none;
+    cursor: pointer;
+    border-spacing: 300px;
+}
+
+#team .profile-link-sir:hover {
+    border-bottom: 2px solid #fff;
+}
+
+#team img {
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+#team .col-lg-3 {
+    margin: 3px;
+    text-align: center;
+    padding: 1rem 0;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s all;
+    border: 2px solid none;
+    width: 30%;
+}
+
+#team .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-lg-3 .content p {
+    font-size: 1rem;
+}
+
+.pers-social {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    z-index: 999;
+}
+
+.personal-social {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(0.6rem);
+    transition: 0.5s all;
+}
+
+#team .col-lg-3:hover {
+    background: #086972;
+    border-color: #086972;
+}
+
+#team .col-lg-3:hover .profile-link-sir {
+    opacity: 100%;
+}
+
+#team .col-lg-3:hover .personal-social {
+    transform: translateY(-0.6rem);
+    opacity: 100%;
+}
+
+
+/* Contact Section Styling */
+
+#contact {
+    background: cornsilk;
+    background-attachment: fixed;
+    padding-bottom: 3rem;
+}
+
+#contact .container-common {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+#contact .row {
+    width: 100%;
+    padding: 0;
+}
+
+#contact .row .col-lg-6 {
+    padding: 1rem 0rem 0rem 4rem;
+    font-size: 1.3rem;
+}
+
+#contact .row .intro h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+#contact .row .intro p {
+    font-family: "Ubuntu", sans-serif;
+}
+
+#contact .row .media .social {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 1rem;
+}
+
+#contact .row .media .fab {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #086972;
+}
+
+#contact .row .media .call {
+    font-size: 1.5rem;
+    color: #086972;
+}
+
+#contact .row .media .media-text {
+    display: inline-block;
+    margin: 0 2rem;
+    position: relative;
+    top: 0.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+#contact .md-text {
+    margin-left: 1.8rem !important;
+}
+
+#contact .row .media .media-text h3 {
+    font-size: 1.2rem;
+}
+
+#contact .row .media .media-text p {
+    font-size: 0.9rem;
+}
+
+#contact .row .col-lg-6:last-child {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+#contact form {
+    width: 80%;
+}
+
+#contact form input,
+.message {
+    margin: 0.3rem 0;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid #086972;
+    font-size: 1rem;
+}
+
+#contact form input:nth-child(1),
+#contact form input:nth-child(2) {
+    width: 49%;
+}
+
+#contact form input:nth-child(3) {
+    width: 99%;
+}
+
+#contact form .message {
+    width: 99%;
+    height: 10rem;
+    resize: none;
+}
+
+#contact form .btn {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.3rem;
+    border: 2px solid #086972;
+    transition: 0.4s all;
+    background-color: #086972;
+    color: #fff;
+}
+
+#contact form .btn:hover {
+    background-color: cornsilk;
+    color: #086972;
+}
+
+
+/* Footer Styling */
+
+#footer {
+    background: #121e37;
+    background-attachment: fixed;
+    padding: 0.5rem 3rem 0.01rem 3rem;
+    color: rgba(255, 255, 255, 0.699);
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+}
+
+#footer .connect-icons {
+    font-size: 1.5rem;
+}
+
+#footer .connect-icons i {
+    margin: 2rem 1rem 0 1rem;
+    cursor: pointer;
+}
+
+.connect-a {
+    color: rgba(255, 255, 255, 0.699) !important;
+    padding: 0.6rem 0rem;
+}
+
+#footer .copyright {
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1rem;
+}
+
+#footer .developers {
+    font-size: 1rem;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 750px) {
+    html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        scroll-padding-top: 2rem;
+    }
+    .home {
+        height: initial !important;
+    }
+    section {
+        padding: 1rem 0.5rem;
+    }
+    .container-common {
+        padding: 0.5rem !important;
+    }
+    .navbar-collapse {
+        transition: 0.5s all;
+    }
+    #team .col-lg-3 {
+        width: inherit !important
+    }
+    #contact .row .col-lg-6 {
+        padding: 1rem 0rem;
+        font-size: 1.3rem;
+    }
+    #contact .row .col-lg-6:last-child {
+        padding: 1rem 0;
+        display: flex;
+        justify-content: right;
+    }
+    #contact form {
+        width: 100%;
+    }
+    .container-list {
+        width: 100vw !important;
+        background-color: #086972;
+    }
+}
